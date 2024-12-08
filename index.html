@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pendidikan - Kuis Pengetahuan Umum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="header-title">Kuis Pengetahuan Umum</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="nav-home">Beranda</a></li>
+                <li><a href="#" id="nav-quiz">Kuis</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="home-page">
+        <h2>Selamat Datang di Kuis Pengetahuan Umum!</h2>
+        <p>Ini adalah kuis yang akan menguji pengetahuan umum Anda. Terdapat berbagai pertanyaan dari berbagai kategori yang bisa Anda jawab.</p>
+        <p>Anda akan diminta untuk menjawab 30 level dengan masing-masing 3 pertanyaan. Setiap jawaban yang benar akan menambah nilai Anda. Ayo uji pengetahuan Anda!</p>
+        <button id="start-quiz" onclick="startQuiz()">Mulai Kuis</button>
+    </div>
+
+    <div id="quiz-page" style="display:none;">
+        <h2 id="quiz-title">Mulai Kuis</h2>
+        <div id="level-name"></div>
+        <div id="question-container"></div>
+        <button id="next-btn" onclick="nextLevel()">Lanjutkan</button>
+    </div>
+
+    <div id="score-container"></div>
+
+    <footer>
+        <p id="footer">Hak Cipta &copy; 2024</p>
+        <p id="creator-info">Dibuat oleh: Kelompok 7 </p>
+        <p id="team-info">Tim Pengembang: Rifaldi </p>
+        <p id="team-info">Melda Auliyah Zakina </p>
+        <p id="team-info">Kartika Sari </p>
+        <p id="team-info">Muhammad Rafly Putratama </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
